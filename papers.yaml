@@ -1,0 +1,1271 @@
+- key: liu2021can
+  title: 'Can Small and Synthetic Benchmarks Drive Modeling Innovation? A Retrospective
+    Study of Question Answering Modeling Approaches '
+  year: 2021
+  author:
+  - Nelson F. Liu
+  - Tony Lee
+  - Robin Jia
+  - Percy Liang
+  summary: Explores whether synthetic benchmarks could have driven architectural modeling
+    progress in natural language (instead of SQuAD) and finds agreement between the
+    two types of benchmarks in multiple cases.
+  url: http://arxiv.org/abs/2102.01065v1
+  areas: NLP
+  issues:
+  - Data_external
+- key: lopez2012putting
+  title: 'Putting human assessments of machine translation systems in order '
+  summary: ' Authors identify the unawknowledged design decisions that bias the assessment
+    of human annotators that use the relative ranking method to evaluate model performance
+    on 25 translation tasks from the annual Workshop on Machine Translation (WMT)
+    in 2010 and 2011. In particular, the order in which candidate translations are
+    presented is shown to bias human judgement and thus evaluation outcomes.'
+  areas: NLP
+  issues:
+  - Human
+- key: toral2018attaining
+  title: 'Attaining the Unattainable? Reassessing Claims of Human Parity in Neural
+    Machine Translation '
+  year: 2018
+  author:
+  - Antonio Toral
+  - Sheila Castilho
+  - Ke Hu
+  - Andy Way
+  summary: A prior claim that a Chinese to English machine translation system achieved
+    human parity falls through when translationese is removed from the picture.Further,
+    expert annotators, in this case, professional translators, are better able to
+    tell between machine and human translations.
+  url: http://arxiv.org/abs/1808.10432v1
+  areas: NLP
+  issues:
+  - Human
+- key: narang2021transformer
+  title: 'Do Transformer Modifications Transfer Across Implementations and Applications? '
+  year: 2021
+  author:
+  - Sharan Narang
+  - Hyung Won Chung
+  - Yi Tay
+  - William Fedus
+  - Thibault Fevry
+  - Michael Matena
+  - Karishma Malkan
+  - Noah Fiedel
+  - Noam Shazeer
+  - Zhenzhong Lan
+  - Yanqi Zhou
+  - Wei Li
+  - Nan Ding
+  - Jake Marcus
+  - Adam Roberts
+  - Colin Raffel
+  summary: The authors find that most proposed modifications to the transformer architecture
+    do not significantly improve performance across a variety of benchmarks.They suggest
+    this is because modifications are specific to implementations and applications,
+    and fail to transfer beyond their original niche.
+  url: http://arxiv.org/abs/2102.11972v1
+  areas: NLP
+  issues:
+  - Implementation
+- key: miller2020effect
+  title: 'The Effect of Natural Distribution Shift on Question Answering Models '
+  year: 2020
+  author:
+  - John Miller
+  - Karl Krauth
+  - Benjamin Recht
+  - Ludwig Schmidt
+  summary: Explores a variety of naturally occuring distribution shifts for language
+    models, such as collecting data from various online source domains, and finds
+    these changes in the distribution can have a large impact on model performance.The
+    authors also find no signs of overfitting from test set re-use on the popular
+    SQuAD benchmark.
+  url: http://arxiv.org/abs/2004.14444v1
+  areas: NLP
+  issues:
+  - Data_external
+  - Overfitting
+- key: bowman2021will
+  title: 'What Will it Take to Fix Benchmarking in Natural Language Understanding?  '
+  year: 2021
+  author:
+  - Samuel R. Bowman
+  - George E. Dahl
+  summary: Survey paper with natural language processing that asserts learning problems
+    should be well constructed, have adequate statistical power, and be representative
+    of the task they aim to solve.
+  url: http://arxiv.org/abs/2104.02145v2
+  areas: NLP
+  issues:
+  - Data_external
+  - Data_internal
+- key: graham2019translationese
+  title: 'Translationese in Machine Translation Evaluation '
+  year: 2019
+  author:
+  - Yvette Graham
+  - Barry Haddow
+  - Philipp Koehn
+  summary: The authors show that using ``reverse''-direction sentences, which were
+    translated from language A to language B but used for a B-to-A dataset, inflate
+    human evaluation scores.They also examine prior claims of model-human parity and
+    find evaluation problems such as not using a large enough test set; a re-evaluation
+    suggests that the machine system was outperformed by humans.
+  url: http://arxiv.org/abs/1906.09833v1
+  areas: NLP
+  issues:
+  - Metrics
+- key: zhang2019effect
+  title: 'The Effect of Translationese in Machine Translation Test Sets '
+  year: 2019
+  author:
+  - Mike Zhang
+  - Antonio Toral
+  summary: The inclusion of translationese, a translation artifact, in machine translation
+    test sets inflates human evaluation scores for machine translation systems, and
+    in some cases changes rankings of models.
+  url: http://arxiv.org/abs/1906.08069v1
+  areas: NLP
+  issues:
+  - Data_internal
+- key: mccoy2019berts
+  title: 'BERTs of a feather do not generalize together: Large variability in generalization
+    across models with similar test set performance '
+  year: 2019
+  author:
+  - R. Thomas McCoy
+  - Junghyun Min
+  - Tal Linzen
+  summary: Training the same NLP model architecture (BERT) over a hundred different
+    random seeds obtains consistent performance on MNLI, a natural language inference
+    (NLI) dataset, but widely varying generalization performance, as measured on HANS,
+    an NLI dataset that tests for biases learned on MNLI.
+  url: http://arxiv.org/abs/1911.02969v2
+  areas: NLP
+  issues:
+  - Data_internal
+- key: niven2019probing
+  title: 'Probing Neural Network Comprehension of Natural Language Arguments '
+  year: 2019
+  author:
+  - Timothy Niven
+  - Hung-Yu Kao
+  summary: Finds that language models trained to solve a reasoning comprehension task
+    exploit statistical cues within the dataset to achieve high performance.
+  url: http://arxiv.org/abs/1907.07355v2
+  areas: NLP
+  issues:
+  - Data_external
+- key: callison2006re
+  title: 'Re-evaluating the role of bleu in machine translation research '
+  summary: The authors highlight two situations where the use of \textsc{Bleu} fails
+    to distinguish between translations which a human could tell apart and would rate
+    differently.They find low correlation between \textsc{Bleu} scores and human judgements
+    of adequacy and fluency.
+  areas: NLP
+  issues:
+  - Metrics
+- key: Post2018
+  title: 'A call for clarity in reporting bleu scores '
+  year: 2018
+  author:
+  - Matt Post
+  summary: 'The most commonly used automatic metric (as opposed to human evaluation)
+    in machine translation, \textsc{Bleu}, is not reported consistently: some papers
+    preprocess text before scoring, and there are many parameters used by \textsc{Bleu}
+    that aren''t reported. The paper proposes a standarized tool for \textsc{Bleu}
+    to solve these problems.'
+  url: http://arxiv.org/abs/1804.08771v2
+  areas: NLP
+  issues:
+  - Baselines
+- key: freitag2020bleu
+  title: 'BLEU might be Guilty but References are not Innocent '
+  year: 2020
+  author:
+  - Markus Freitag
+  - David Grangier
+  - Isaac Caswell
+  summary: The authors show that improving reference translations improves correlation
+    of \textsc{Bleu} with human judgement.
+  url: http://arxiv.org/abs/2004.06063v2
+  areas: NLP
+  issues:
+  - Metrics
+- key: card2020little
+  title: 'With Little Power Comes Great Responsibility '
+  year: 2020
+  author:
+  - Dallas Card
+  - Peter Henderson
+  - Urvashi Khandelwal
+  - Robin Jia
+  - Kyle Mahowald
+  - Dan Jurafsky
+  summary: ' This paper describes the influence of statistical power in NLP experimental
+    design and how small dataset size in GLUE make it difficult to distinguish between
+    statistical noise and meaningful model improvements.'
+  url: http://arxiv.org/abs/2010.06595v1
+  areas: NLP
+  issues:
+  - Data_internal
+- key: ribeiro2020beyond
+  title: 'Beyond Accuracy: Behavioral Testing of NLP models with CheckList '
+  year: 2020
+  author:
+  - Marco Tulio Ribeiro
+  - Tongshuang Wu
+  - Carlos Guestrin
+  - Sameer Singh
+  summary: The authors propose an alternative evaluation paradigm to benchmarks, instead
+    focusing on specific tests for known or anticipated failure modes for broadly
+    relevant linguistic capabilities.
+  url: http://arxiv.org/abs/2005.04118v1
+  areas: NLP
+  issues:
+  - Metrics
+  - Benchmarking
+- key: kaushik2019learning
+  title: 'Learning the Difference that Makes a Difference with Counterfactually-Augmented
+    Data '
+  summary: Crowdsourced perturbations of two NLP datasets cause model performance
+    to drop, while learning on the regular and perturbed data improves on both domains
+    and generalization to new domains.The two datasets are IMDB, a sentiment classification
+    dataset \citep{Maas2011}, and SNLI \citep{Bowman2015}, a natural language inference
+    dataset.
+  areas: NLP
+  issues:
+  - Data_external
+- key: dodge2020fine
+  title: 'Fine-Tuning Pretrained Language Models: Weight Initializations, Data Orders,
+    and Early Stopping '
+  year: 2020
+  author:
+  - Jesse Dodge
+  - Gabriel Ilharco
+  - Roy Schwartz
+  - Ali Farhadi
+  - Hannaneh Hajishirzi
+  - Noah Smith
+  summary: Finds that small factors such as random seed variance can have a huge impact
+    on BERT performance, which is up to 7\% on downstream tasks in the case of random
+    seed variance.
+  url: http://arxiv.org/abs/2002.06305v1
+  areas: NLP
+  issues:
+  - Baselines
+- key: edunov2019evaluation
+  title: 'On The Evaluation of Machine Translation Systems Trained With Back-Translation '
+  year: 2019
+  author:
+  - Sergey Edunov
+  - Myle Ott
+  - Marc'Aurelio Ranzato
+  - Michael Auli
+  summary: The authors show that \textsc{Bleu} fails to capture human preferences
+    for models trained with back-translation.
+  url: http://arxiv.org/abs/1908.05204v2
+  areas: NLP
+  issues:
+  - Metrics
+- key: gardner2020evaluating
+  title: 'Evaluating NLP Models via Contrast Sets '
+  summary: Benchmarks fail to address how NLP models perform in specific cases.The
+    authors propose ``contrast sets'', where experts manually perturb test data points
+    in a semantically meaningful way, to identify whether models are still able to
+    output the correct answer.SOTA models perform worse on these contrast sets.
+  areas: NLP
+  issues:
+  - Data_external
+- key: zhou2020curse
+  title: 'The Curse of Performance Instability in Analysis Datasets: Consequences,
+    Source, and Suggestions '
+  year: 2020
+  author:
+  - Xiang Zhou
+  - Yixin Nie
+  - Hao Tan
+  - Mohit Bansal
+  summary: 'Analysis datasets are similar to standard benchmarks but specifically
+    designed to test a linguistic capability or known failure mode. The authors find
+    that model performance on benchmarks between random seeds is stable, but performance
+    on analysis dataset can vary widely. '
+  url: http://arxiv.org/abs/2004.13606v2
+  areas: NLP
+  issues:
+  - Data_internal
+- key: melis2017state
+  title: 'On the State of the Art of Evaluation in Neural Language Models '
+  year: 2017
+  author:
+  - "G\xE1bor Melis"
+  - Chris Dyer
+  - Phil Blunsom
+  summary: 'The authors compare Recurrent Highway Networks (RHNs) against Long Short-Term
+    Memory networks (LSTMs).They find that prior work demonstrating RHN superiority
+    over LSTMs allocated more compute to RHNs, and find similar or competitive performance
+    for LSTMs once this is controlled for. '
+  url: http://arxiv.org/abs/1707.05589v2
+  areas: NLP
+  issues:
+  - Baselines
+- key: mccoy2019right
+  title: 'Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural
+    Language Inference '
+  year: 2019
+  author:
+  - R. Thomas McCoy
+  - Ellie Pavlick
+  - Tal Linzen
+  summary: The Multi-genre Natural Language Inference dataset (MNLI) contains several
+    examples of syntactic heuristics, where the answer can be predicted by following
+    a simple rule, such as always predicting "contradiction" when the premise contains
+    "not".The authors construct a new dataset HANS which contains examples that both
+    satisfy and violate the heuristics, and show that SOTA models perform extremely
+    badly (e.g. 100\% to 0\% accuracy) on the portion of HANS which violates the heuristics
+    the models have learned from MNLI.
+  url: http://arxiv.org/abs/1902.01007v4
+  areas: NLP
+  issues:
+  - Data_external
+- key: zhang2020revisiting
+  title: 'Revisiting Few-sample BERT Fine-tuning '
+  year: 2020
+  author:
+  - Tianyi Zhang
+  - Felix Wu
+  - Arzoo Katiyar
+  - Kilian Q. Weinberger
+  - Yoav Artzi
+  summary: Many previous papers have proposed solutions for stable BERT finetuning.The
+    authors find that instability is caued by a bug in the ADAM implementation, and
+    that fixing this bug reduces the advantage of propose finetuning methods.
+  url: http://arxiv.org/abs/2006.05987v3
+  areas: NLP
+  issues:
+  - Implementation
+- key: schick2020s
+  title: 'It''s Not Just Size That Matters: Small Language Models Are Also Few-Shot
+    Learners '
+  year: 2020
+  author:
+  - Timo Schick
+  - "Hinrich Sch\xFCtze"
+  summary: By reformulating SuperGLUE tasks into cloze-style questions, small language
+    models can be can also be fine-tuned to have performace better than GPT-3.
+  url: http://arxiv.org/abs/2009.07118v2
+  areas: NLP
+  issues:
+  - Baselines
+- key: goel2021robustness
+  title: 'Robustness Gym: Unifying the NLP Evaluation Landscape '
+  year: 2021
+  author:
+  - Karan Goel
+  - Nazneen Rajani
+  - Jesse Vig
+  - Samson Tan
+  - Jason Wu
+  - Stephan Zheng
+  - Caiming Xiong
+  - Mohit Bansal
+  - "Christopher R\xE9"
+  summary: Presents software developer tools that cover a range of different NLP metrics,
+    datasets, etc. in order to help practicioners evaluate their models in various
+    conditions.
+  url: http://arxiv.org/abs/2101.04840v1
+  areas: NLP
+  issues:
+  - Data_external
+- key: ethayarajh2020utility
+  title: 'Utility is in the Eye of the User: A Critique of NLP Leaderboards '
+  year: 2020
+  author:
+  - Kawin Ethayarajh
+  - Dan Jurafsky
+  summary: Authors highlight that leaderboards fail to measure (i.e., don't come with
+    metrics for) factors beyond model performance, such as model size or inference
+    speed or environmental impact.
+  url: http://arxiv.org/abs/2009.13888v4
+  areas: NLP
+  issues:
+  - Benchmarking
+  - Metrics
+- key: kaushik2018much
+  title: 'How Much Reading Does Reading Comprehension Require? A Critical Investigation
+    of Popular Benchmarks '
+  year: 2018
+  author:
+  - Divyansh Kaushik
+  - Zachary C. Lipton
+  summary: Reading comprehension benchmarks require models to pick the answer to a
+    question given a passage. Models do well on reading comprehension benchmarks even
+    when the passage or question is withheld, suggesting that the datasets are poorly
+    constructed because knowledge of the passage or question is irrelevant. \
+  url: http://arxiv.org/abs/1808.04926v2
+  areas: NLP
+  issues:
+  - Data_external
+- key: DeGrave2021
+  title: 'AI for radiographic COVID-19 detection selects shortcuts over signal '
+  summary: Finds that models trained for COVID-19 detection through radiographs exploit
+    spurious correlates that do not hold when deployed in different environments.
+  areas: CV
+  issues:
+  - Data_external
+- key: oakden2020hidden
+  title: 'Hidden Stratification Causes Clinically Meaningful Failures in Machine Learning
+    for Medical Imaging '
+  year: 2019
+  author:
+  - Luke Oakden-Rayner
+  - Jared Dunnmon
+  - Gustavo Carneiro
+  - "Christopher R\xE9"
+  summary: Finds that models trained for detecting a pneumothorax from chest x-rays
+    latch onto obvious dataset-level heuristics such as the presence of a chest drain
+    instead of adequately solving the task.
+  url: http://arxiv.org/abs/1909.12475v2
+  areas: CV
+  issues:
+  - Data_external
+- key: Shankar2020
+  title: 'Evaluating Machine Accuracy on ImageNet '
+  summary: ' Humans are trained through documentation guidance and practice to classify
+    objects in ImageNet and achieve comparable accuracy to modern machine learning
+    models, though experience significantly less of a performance drop than models
+    due to distribution shift. These labelers are about 3\% to 9\% better than the
+    human performance levels reported from early 2015, indicating the variability
+    of human baselines. Top-1 accuracy (a more natural task for humans) is almost
+    perfectly linearly correlated with multi-label accuracy for the evaluated models,
+    but humans fail more often for fine-grained categories (eg. differentiating dog
+    breeds) while models fail more evenly across label categories.'
+  areas: CV
+  issues:
+  - Human
+- key: tian2020rethinking
+  title: 'Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need? '
+  year: 2020
+  author:
+  - Yonglong Tian
+  - Yue Wang
+  - Dilip Krishnan
+  - Joshua B. Tenenbaum
+  - Phillip Isola
+  summary: 'Finds that the simple baseline of training a linear model on top of a
+    supervised classifier in the context of meta-learning tasks can outperform a variety
+    of previous meta-learning appraoches such as MAML. '
+  url: http://arxiv.org/abs/2003.11539v2
+  areas: CV
+  issues:
+  - Baselines
+- key: beyer2020we
+  title: Are we done with ImageNet?
+  year: 2020
+  author:
+  - Lucas Beyer
+  - "Olivier J. H\xE9naff"
+  - Alexander Kolesnikov
+  - Xiaohua Zhai
+  - "A\xE4ron van den Oord"
+  summary: The authors collect multi-label annotations for ImageNet via a modified
+    crowdsourcing process.The results show a slightly plateauing trend, indicating
+    that models may have overfit to specifics of the ImageNet distribution.
+  url: http://arxiv.org/abs/2006.07159v1
+  areas: CV
+  issues:
+  - Metrics
+- key: taori2020measuring
+  title: 'Measuring Robustness to Natural Distribution Shifts in Image Classification '
+  year: 2020
+  author:
+  - Rohan Taori
+  - Achal Dave
+  - Vaishaal Shankar
+  - Nicholas Carlini
+  - Benjamin Recht
+  - Ludwig Schmidt
+  summary: Finds that models trained on ImageNet fail to generalize well to other
+    distributions with shifts in object pose, lighting, object composition, etc.
+  url: http://arxiv.org/abs/2007.00644v2
+  areas: CV
+  issues:
+  - Data_external
+- key: liaoforward
+  title: 'In a forward direction: Analyzing distribution shifts in machine translation
+    test sets over time '
+  summary: A fixed machine translation model scores better on newer machine translation
+    test sets than older test sets (the Workshop on Machine Translation releases a
+    new test set every year).The observed increase in scores for any single model
+    is attributable to changes made in dataset construction which progressively removed
+    translationese, a problematic translation artifact.
+  areas: CV
+  issues:
+  - Data_external
+- key: raghu2019transfusion
+  title: 'Transfusion: Understanding Transfer Learning for Medical Imaging '
+  summary: "This study looks at 2 medical image datasets: diabetic retinopathy prediction\
+    \ and chest x-ray prediction.They compare a few deep learning models and find\
+    \ that imagenet pretraining doesn\u2019t really help performance on these downstream\
+    \ datasets."
+  areas: CV
+  issues:
+  - Data_external
+- key: ke2021chextransfer
+  title: 'CheXtransfer: Performance and Parameter Efficiency of ImageNet Models for
+    Chest X-Ray Interpretation '
+  summary: The paper compares ImageNet performance of several CNN architectures to
+    performance on X-ray classification.The authors find that X-ray classification
+    performance has plateaued as a function  of ImageNet performance, but ImageNet
+    pre-training still helps on the X-ray dataset.
+  areas: CV
+  issues:
+  - Data_external
+- key: kornblith2019better
+  title: 'Do Better ImageNet Models Transfer Better? '
+  year: 2018
+  author:
+  - Simon Kornblith
+  - Jonathon Shlens
+  - Quoc V. Le
+  summary: The authors evaluate ImageNet models on twelve other image classification
+    datasets and find that better ImageNet models also perform better on the other
+    datasetes, especially when the models are pre-trained on ImageNet.
+  url: http://arxiv.org/abs/1805.08974v3
+  areas: CV
+  issues:
+  - Data_external
+- key: tuggener2021enough
+  title: 'Is it Enough to Optimize CNN Architectures on ImageNet? '
+  year: 2021
+  author:
+  - Lukas Tuggener
+  - "J\xFCrgen Schmidhuber"
+  - Thilo Stadelmann
+  summary: The authors train 500 ImageNet architectures on 8 other image classification
+    datasets from different domains and find that the correlation between ImageNet
+    performance and dowstream dataset performance varies wildly, with even negative
+    correlations for some.
+  url: http://arxiv.org/abs/2103.09108v2
+  areas: CV
+  issues:
+  - Data_external
+- key: zech2018variable
+  title: 'Variable generalization performance of a deep learning model to detect pneumonia
+    in chest radiographs: A cross-sectional study '
+  summary: Finds that models trained to diagnose pneumonia in chest radiographs in
+    one hospital fail to generalize well to other hospital due to differences in data
+    collection, equipment, patient populations, etc.
+  areas: CV
+  issues:
+  - Data_external
+- key: recht2019imagenet
+  title: 'Does ImageNet Generalize to ImageNet? '
+  summary: The authors construct a new test set for ImageNet and find that overfitting
+    from test set re-use did not occur despite a decade of competitive testing on
+    this dataset.Instead, distribution shift led to a substantial drop in accuracy.
+  areas: CV
+  issues:
+  - Overfitting
+- key: recht2018cifar
+  title: 'Does CIFAR-10 Generalize to CIFAR-10? '
+  summary: The authors construct a new test set for CIFAR-10 and find that overfitting
+    from test set re-use did not occur despite a decade of competitive testing on
+    this dataset.Instead, distribution shift led to a substantial drop in accuracy.
+  areas: CV
+  issues:
+  - Overfitting
+- title: 'Cold Case: The Lost MNIST Digits'
+  year: 2019
+  author:
+  - Chhavi Yadav
+  - "L\xE9on Bottou"
+  summary: The authors construct a new test set for MNIST and find that overfitting
+    from test set re-use did not occur despite two decades of competitive testing
+    on this dataset.
+  url: http://arxiv.org/abs/1905.10498v2
+  key: newmnist
+  areas: CV
+  issues:
+  - Overfitting
+- key: dhillon2019baseline
+  title: 'A Baseline for Few-shot Image Classification '
+  summary: Finds that a simple transductively-tuned baseline can outperform all more
+    complex methods (MAML, MetaOpt, etc.) on few-shot learning tasks when controlling
+    for all other factors of variation.
+  areas: CV
+  issues:
+  - Baselines
+- key: tatarchenko2019single
+  title: 'What Do Single-view 3D Reconstruction Networks Learn? '
+  year: 2019
+  author:
+  - Maxim Tatarchenko
+  - Stephan R. Richter
+  - "Ren\xE9 Ranftl"
+  - Zhuwen Li
+  - Vladlen Koltun
+  - Thomas Brox
+  summary: Finds that simple baselines such as clustering and retrieval on top of
+    the pretrained embedding space outperform recent deep methods for 3D reconstruction.
+  url: http://arxiv.org/abs/1905.03678v1
+  areas: CV
+  issues:
+  - Baselines
+- key: parmar2021buggy
+  title: 'On Buggy Resizing Libraries and Surprising Subtleties in FID Calculation '
+  year: 2021
+  author:
+  - Gaurav Parmar
+  - Richard Zhang
+  - Jun-Yan Zhu
+  summary: 'The widely used Frechet Inception Distance (FID) metric for evaluating
+    generative models is not consistently reported. Differences between image processing
+    libraries and choices in implementing FID cause meaningful differences in scores. '
+  url: http://arxiv.org/abs/2104.11222v1
+  areas: CV
+  issues:
+  - Implementation
+- key: tsipras2020imagenet
+  title: 'From ImageNet to Image Classification: Contextualizing Progress on Benchmarks '
+  year: 2020
+  author:
+  - Dimitris Tsipras
+  - Shibani Santurkar
+  - Logan Engstrom
+  - Andrew Ilyas
+  - Aleksander Madry
+  summary: The authors provide multi-label annotations for ImageNet via a modified
+    crowdsourcing process and study the impact of images with multiple labels on ImageNet
+    accuracy metrics.
+  url: http://arxiv.org/abs/2005.11295v1
+  areas: CV
+  issues:
+  - Data_external
+- key: rice2020overfitting
+  title: 'Overfitting in adversarially robust deep learning  '
+  year: 2020
+  author:
+  - Leslie Rice
+  - Eric Wong
+  - J. Zico Kolter
+  summary: The paper shows that early stopping combined with a simple loss function
+    is competitive with more complicated loss functions that were proposed for adversarially
+    robust image classification.
+  url: http://arxiv.org/abs/2002.11569v2
+  areas: CV
+  issues:
+  - Baselines
+- key: northcutt2021pervasive
+  title: 'Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks '
+  year: 2021
+  author:
+  - Curtis G. Northcutt
+  - Anish Athalye
+  - Jonas Mueller
+  summary: Authors revealed significant label errors in mainstream datasets, such
+    as an average error rate of 3.4\% across the reviewed 10 datasets, including 6\%
+    of the ImageNet validation set.\
+  url: http://arxiv.org/abs/2103.14749v3
+  areas: CV
+  issues:
+  - Data_internal
+- key: li2020random
+  title: 'Random search and reproducibility for neural architecture search '
+  year: 2019
+  author:
+  - Liam Li
+  - Ameet Talwalkar
+  summary: Given the same computational budget, random search with minor modifications
+    (e.g. early stopping) outperforms state of the art neural architecture search
+    methods.
+  url: http://arxiv.org/abs/1902.07638v3
+  areas: Meta_learning
+  issues:
+  - Baselines
+- key: yu2019evaluating
+  title: 'Evaluating the Search Phase of Neural Architecture Search '
+  year: 2019
+  author:
+  - Kaicheng Yu
+  - Christian Sciuto
+  - Martin Jaggi
+  - Claudiu Musat
+  - Mathieu Salzmann
+  summary: Finds that random search within the penn treebank and cifar10 dataset search
+    spaces leads to similar performance as leading neural architecture search algorithms
+    when given equal compute.\
+  url: http://arxiv.org/abs/1902.08142v3
+  areas: Meta_learning
+  issues:
+  - Baselines
+- key: zhou2019hype
+  title: 'HYPE: A Benchmark for Human eYe Perceptual Evaluation of Generative Models '
+  summary: This paper introduces a human benchmark for evaluation of generative models,
+    which scores if a human can tell a real image vs fake. The authors found that
+    HYPE scores were not correlated with commonly used automated metrics such as FID.
+  areas: Generative
+  issues:
+  - Metrics
+- key: lucic2017gans
+  title: 'Are GANs Created Equal? A Large-Scale Study '
+  year: 2017
+  author:
+  - Mario Lucic
+  - Karol Kurach
+  - Marcin Michalski
+  - Sylvain Gelly
+  - Olivier Bousquet
+  summary: Evaluates many GAN losses, fixing the backbone architecture, dataset, and
+    other training details, and finds that most GAN models can reach similar performance
+    given equal compute budget.\
+  url: http://arxiv.org/abs/1711.10337v4
+  areas: Generative
+  issues:
+  - Baselines
+- key: li2017hyperband
+  title: 'Hyperband: a novel bandit-based approach to hyperparameter optimization '
+  summary: Finds that random search combined with early stopping outperforms more
+    sophisticated Bayesian hyper-parameter optimization methods.
+  areas: Opt
+  issues:
+  - Baselines
+- key: loshchilov2017decoupled
+  title: 'Decoupled Weight Decay Regularization '
+  year: 2017
+  author:
+  - Ilya Loshchilov
+  - Frank Hutter
+  summary: The authors point out that $L_2$ regularization is distinct from weight
+    decay regularization for adaptive gradient algorithms like Adam, even though the
+    former is often substituted for the latter.They show that implementing weight
+    decay regularization improves Adam's generalization performance.
+  url: http://arxiv.org/abs/1711.05101v3
+  areas: Opt
+  issues:
+  - Implementation
+- key: nado2021large
+  title: 'A Large Batch Optimizer Reality Check: Traditional, Generic Optimizers Suffice
+    Across Batch Sizes '
+  year: 2021
+  author:
+  - Zachary Nado
+  - Justin M. Gilmer
+  - Christopher J. Shallue
+  - Rohan Anil
+  - George E. Dahl
+  summary: LARS and LAMB optimizers are designed to increase the speed of model training
+    given large batch sizes. Traditional optimizers like Nesterov momentum and Adam
+    perform comparably at large batch sizes, signifying that such interventions are
+    not significant improvements when compared to an adequate baseline.\
+  url: http://arxiv.org/abs/2102.06356v3
+  areas: Opt
+  issues:
+  - Baselines
+- key: huang2020combining
+  title: 'Combining Label Propagation and Simple Models Out-performs Graph Neural
+    Networks '
+  year: 2020
+  author:
+  - Qian Huang
+  - Horace He
+  - Abhay Singh
+  - Ser-Nam Lim
+  - Austin R. Benson
+  summary: Finds that incorporating a graph label propagation step with simple models
+    outperforms more recent deep graph neural networks.
+  url: http://arxiv.org/abs/2010.13993v2
+  areas: Graph
+  issues:
+  - Baselines
+- key: dwivedi2020benchmarking
+  title: 'Benchmarking Graph Neural Networks  '
+  year: 2020
+  author:
+  - Vijay Prakash Dwivedi
+  - Chaitanya K. Joshi
+  - Thomas Laurent
+  - Yoshua Bengio
+  - Xavier Bresson
+  summary: This paper documents common pitfalls and problems in benchmarking graph
+    neural networks.
+  url: http://arxiv.org/abs/2003.00982v3
+  areas: Graph
+  issues:
+  - Baselines
+- key: wu2019simplifying
+  title: 'Simplifying Graph Convolutional Networks  '
+  year: 2019
+  author:
+  - Felix Wu
+  - Tianyi Zhang
+  - Amauri Holanda de Souza Jr.
+  - Christopher Fifty
+  - Tao Yu
+  - Kilian Q. Weinberger
+  summary: ' Finds that a simple graph preprocessing step with an adjacency matrix
+    combined with logistic regression outperforms more recent deep graph neural networks.'
+  url: http://arxiv.org/abs/1902.07153v2
+  areas: Graph
+  issues:
+  - Baselines
+- key: shchur2018pitfalls
+  title: 'Pitfalls of Graph Neural Network Evaluation '
+  year: 2018
+  author:
+  - Oleksandr Shchur
+  - Maximilian Mumme
+  - Aleksandar Bojchevski
+  - "Stephan G\xFCnnemann"
+  summary: 'Graph neural network papers (GNN) fail to control for relevant factors
+    when making comparisons.The authors of this paper attempt to evaluate four GNN
+    architectures while controlling for everything except architectures: keeping the
+    optimizers, initialization methods, compute budget, etc, the same.Performance
+    turns out to be similar between different GNNs.\'
+  url: http://arxiv.org/abs/1811.05868v2
+  areas: Graph
+  issues:
+  - Baselines
+- key: Dua:2019
+  title: 'Do we Need Hundreds of Classifiers to Solve Real World Classification Problems?  '
+  summary: ', authors found that random forest classifiers outperformed any other
+    type, with these methods achieving over 90\% accuracy in 84.3\% of the data sets.'
+  areas: Tab
+  issues:
+  - Baselines
+- key: bellamy2020evaluating
+  title: 'Evaluating Progress on Machine Learning for Longitudinal Electronic Healthcare
+    Data  '
+  year: 2020
+  author:
+  - David Bellamy
+  - Leo Celi
+  - Andrew L. Beam
+  summary: Finds that on tabular data prediction tasks found on MIMIC-III, simple
+    logistic regression achieves comparable performance to more sophisticated methods
+    developed over the past three years.\
+  url: http://arxiv.org/abs/2010.01149v1
+  areas: Tab
+  issues:
+  - Baselines
+- key: andrychowicz2020matters
+  title: 'What Matters In On-Policy Reinforcement Learning? A Large-Scale Empirical
+    Study '
+  year: 2020
+  author:
+  - Marcin Andrychowicz
+  - Anton Raichuk
+  - "Piotr Sta\u0144czyk"
+  - Manu Orsini
+  - Sertan Girgin
+  - Raphael Marinier
+  - "L\xE9onard Hussenot"
+  - Matthieu Geist
+  - Olivier Pietquin
+  - Marcin Michalski
+  - Sylvain Gelly
+  - Olivier Bachem
+  summary: Implements many RL algorithms and more than 50 code-level tricks and optimizations
+    to consistently benchmark performance;one surprising finding is that policy initialization
+    scheme plays a huge role in policy performance.
+  url: http://arxiv.org/abs/2006.05990v1
+  areas: RL
+  issues:
+  - Data_external
+  - Baselines
+- key: engstrom2020implementation
+  title: 'Implementation Matters in Deep Policy Gradients: A Case Study on PPO and
+    TRPO '
+  year: 2020
+  author:
+  - Logan Engstrom
+  - Andrew Ilyas
+  - Shibani Santurkar
+  - Dimitris Tsipras
+  - Firdaus Janoos
+  - Larry Rudolph
+  - Aleksander Madry
+  summary: 'The authors compare two deep policy gradient algorithms, Proximal Policy
+    Optimization (PPO) and Trusted Region Policy Optimization (TRPO). They find that
+    ``code level optimizations'''', algorithmic modification described as auxillary
+    details or undescribed altogether, are responsible for most of PPO''s performance
+    gain over TRPO and significantly affect algorithmic behaviour. '
+  url: http://arxiv.org/abs/2005.12729v1
+  areas: RL
+  issues:
+  - Implementation
+- key: henderson2018deep
+  title: 'Deep reinforcement learning that matters '
+  year: 2017
+  author:
+  - Peter Henderson
+  - Riashat Islam
+  - Philip Bachman
+  - Joelle Pineau
+  - Doina Precup
+  - David Meger
+  summary: 'Evaluation of reinforcement learning (RL) algorithms suffers from several
+    issues: varying the random seed varies algorithm performance enough to change
+    performance rankings; many under-reported hyperparameters greatly affect algorithm
+    performance; different implementations of the same algorithm perform differently. '
+  url: http://arxiv.org/abs/1709.06560v3
+  areas: RL
+  issues:
+  - Baselines
+- key: mania2018simple
+  title: 'Simple random search provides a competitive approach to reinforcement learning '
+  year: 2018
+  author:
+  - Horia Mania
+  - Aurelia Guy
+  - Benjamin Recht
+  summary: A lightweight modification of random search achieves similar reward as
+    SOTA reinforcement learning methods on MuJoCo Gym tasks while requiring fewer
+    samples.
+  url: http://arxiv.org/abs/1803.07055v1
+  areas: RL
+  issues:
+  - Baselines
+- key: rajeswaran2017towards
+  title: 'Towards Generalization and Simplicity in Continuous Control '
+  year: 2017
+  author:
+  - Aravind Rajeswaran
+  - Kendall Lowrey
+  - Emanuel Todorov
+  - Sham Kakade
+  summary: 'Simple methods using policies with linear and RBF parameterizations can
+    solve many continuous control benchmarks, including MuJoCo Gym tasks.Further,
+    the authors highlight that policies learned on the benchmarks are trajectory-centric:
+    when these policies are perturbed, they fail to recover.\'
+  url: http://arxiv.org/abs/1703.02660v2
+  areas: RL
+  issues:
+  - Baselines
+- key: goyal2017making
+  title: 'Making the V in VQA Matter: Elevating the Role of Image Understanding in
+    Visual Question Answering '
+  year: 2016
+  author:
+  - Yash Goyal
+  - Tejas Khot
+  - Douglas Summers-Stay
+  - Dhruv Batra
+  - Devi Parikh
+  summary: Finds that original VQA dataset is not balanced in terms of label distribution
+    for certain questions, making achieving high performance relatively easy.
+  url: http://arxiv.org/abs/1612.00837v3
+  areas: VQA
+  issues:
+  - Data_external
+- key: teney2020value
+  title: "On the Value of Out-of-Distribution Testing: An Example of Goodhart\u2019\
+    s Law "
+  summary: Critiques the use of VQA-CP as a valid OOD dataset for VQA tasks, since
+    VQA-CP inverts the VQA label distribution, and many robust methods explicitly
+    rely on this fact.\
+  areas: VQA
+  issues:
+  - Data_external
+  - Data_external
+- key: yang2019critically
+  title: "Critically Examining the \u201CNeural Hype\u201D: Weak Baselines and the\
+    \ Additivity of Effectiveness Gains from Neural Ranking Models "
+  summary: Examines many information-retrieval papers from 2005-2019, and find that
+    no approach (both neural or non-neural) comes close to the 2004 best.\
+  areas: IR
+  issues:
+  - Baselines
+- key: musgrave2020metric
+  title: 'A Metric Learning Reality Check '
+  year: 2020
+  author:
+  - Kevin Musgrave
+  - Serge Belongie
+  - Ser-Nam Lim
+  summary: Authors benchmark several deep metric learning algorithms on three datasets
+    under identical training conditions and find that papers have drastically overstated
+    improvements over classic methods.
+  url: http://arxiv.org/abs/2003.08505v3
+  areas: Metric_learning
+  issues:
+  - Baselines
+- key: fehervari2019unbiased
+  title: 'Unbiased Evaluation of Deep Metric Learning Algorithms '
+  year: 2019
+  author:
+  - Istvan Fehervari
+  - Avinash Ravichandran
+  - Srikar Appalaraju
+  summary: Authors benchmark several deep metric learning algorithms on three datasets
+    under identical training conditions and find that older methods perform significantly
+    better than previously believed.
+  url: http://arxiv.org/abs/1911.12528v1
+  areas: Metric_learning
+  issues:
+  - Baselines
+- key: roth2020revisiting
+  title: 'Revisiting Training Strategies and Generalization Performance in Deep Metric
+    Learning '
+  year: 2020
+  author:
+  - Karsten Roth
+  - Timo Milbich
+  - Samarth Sinha
+  - Prateek Gupta
+  - "Bj\xF6rn Ommer"
+  - Joseph Paul Cohen
+  summary: Authors benchmark several deep metric learning algorithms on three datasets
+    under identical training conditions and find that generally, performance between
+    criteria is much more similar than literature indicates.\
+  url: http://arxiv.org/abs/2002.08473v9
+  areas: Metric_learning
+  issues:
+  - Baselines
+- key: dacrema2021troubling
+  title: 'A Troubling Analysis of Reproducibility and Progress in Recommender Systems
+    Research '
+  year: 2019
+  author:
+  - Maurizio Ferrari Dacrema
+  - Simone Boglio
+  - Paolo Cremonesi
+  - Dietmar Jannach
+  summary: This is a recommender systems reproducibility experiment, where they compare
+    the proposed methods to a range of baselines on the datasets the original papers
+    used; 11 of the 12 methods were outperformed by simple baselines on the datasets
+    the respective paper had identified.
+  url: http://arxiv.org/abs/1911.07698v3
+  areas: RecSys
+  issues:
+  - Baselines
+- key: rendle2019difficulty
+  title: 'On the Difficulty of Evaluating Baselines: A Study on Recommender Systems'
+  year: 2019
+  author:
+  - Steffen Rendle
+  - Li Zhang
+  - Yehuda Koren
+  summary: This is a recommender systems reproducibility experiment on the MovieLens-10M
+    benchmark; finds that a well-tuned vanilla matrix factorization baseline significantly
+    outperforms more recent methods reported in the literature.\
+  url: http://arxiv.org/abs/1905.01395v1
+  areas: RecSys
+  issues:
+  - Baselines
+- key: oliver2018realistic
+  title: 'Realistic Evaluation of Deep Semi-Supervised Learning Algorithms '
+  year: 2018
+  author:
+  - Avital Oliver
+  - Augustus Odena
+  - Colin Raffel
+  - Ekin D. Cubuk
+  - Ian J. Goodfellow
+  summary: This work is a standardized evaluation of semi-supervised learning algorithms
+    on SVHN and CIFAR-10; they find that prior work underestimated the performance
+    of fully supervised learning in the small-n regime and that ImageNet pre-training
+    + fine-tuning with few samples does better than any of the semi-supervised methods
+    they benchmarked.\
+  url: http://arxiv.org/abs/1804.09170v4
+  areas: SSL
+  issues:
+  - Baselines
+- key: wagstaff2012machine
+  title: 'Machine Learning that Matters '
+  year: 2012
+  author:
+  - Kiri Wagstaff
+  summary: A scientist hoping to use machine learning for practical applications gets
+    frustrated with the inadequate quality of the UCI repository \cite{Dua:2019} and
+    the benchmark culture it perpetuates. She advocates instead for a more systems-level
+    perspective on machine learning development and evaluation.
+  url: http://arxiv.org/abs/1206.4656v1
+  areas: General
+  issues:
+  - Data_external
+- key: firestone2020performance
+  title: "Performance vs. competence in human\u2013machine comparisons "
+  summary: There is a difference between possessing human-level ability (``competence''),
+    and the superficial demonstration of a skill (``performance''). Many models perform
+    better than human counterparts on a given learning problem but do not achieve
+    this performance in a human-like way, and thus fail to demonstrate competence
+    when tested for that skill outside the scope of the initial learning problem.
+  areas: General
+  issues:
+  - Human
+- key: davis2021flawed
+  title: 'A Flawed Dataset for Symbolic Equation Verification '
+  year: 2021
+  author:
+  - Ernest Davis
+  summary: A synthetic dataset for equation verification is heavily critiqued for
+    the lack of rigor in how it is generated, the correctness of the axioms presented
+    and the relevance of the task represented.
+  url: http://arxiv.org/abs/2105.11479v4
+  areas: General
+  issues:
+  - Data_external
+  - Data_internal
+- key: sambasivan2021everyone
+  title: "\u201CEveryone wants to do the model work, not the data work\u201D: Data\
+    \ Cascades in High-Stakes AI "
+  summary: Authors interview 53 ML practitioners in 6 countries and conclude that
+    data work remains under-valued as a research topic of interest, even though data
+    labelling consists of 25-60\% of the cost of model development. They identify
+    that data issues compound on each other in ``data cascades'', contributing to
+    critical failures in model deployment within high stakes scenarios.
+  areas: General
+  issues:
+  - Data_internal
+- key: bouthillier2021accounting
+  title: 'Accounting for variance in machine learning benchmarks '
+  year: 2021
+  author:
+  - Xavier Bouthillier
+  - Pierre Delaunay
+  - Mirko Bronzi
+  - Assya Trofimov
+  - Brennan Nichyporuk
+  - Justin Szeto
+  - Naz Sepah
+  - Edward Raff
+  - Kanika Madan
+  - Vikram Voleti
+  - Samira Ebrahimi Kahou
+  - Vincent Michalski
+  - Dmitriy Serdyuk
+  - Tal Arbel
+  - Chris Pal
+  - "Ga\xEBl Varoquaux"
+  - Pascal Vincent
+  summary: Several sources of variation in the dataset and implementation of machine
+    learning models can obscure our understanding of their performance (eg. data sampling,
+    data augmentation, parameter initialization, and hyperparameters choices). This
+    paper recommends randomization and more robust trial reporting in order to appropriately
+    and consistently address these issues.
+  url: http://arxiv.org/abs/2103.03098v1
+  areas: General
+  issues:
+  - Metrics
+- key: biderman2020pitfalls
+  title: 'Pitfalls in Machine Learning Research: Reexamining the Development Cycle '
+  year: 2020
+  author:
+  - Stella Biderman
+  - Walter J. Scheirer
+  summary: ' This paper comments on the challenges throughout the model development
+    lifecycle that contributes to failures in machine learning deployment. Algorithmic
+    design, data collection, and evaluation practices are named as concrete areas
+    of concern - authors recommend interventions such as third party assessment, statistical
+    testing and data audits.'
+  url: http://arxiv.org/abs/2011.02832v2
+  areas: General
+  issues:
+  - Benchmarking
+- key: shiftcan
+  title: 'Can You Trust Your Model''s Uncertainty? '
+  summary: This survey of uncertainty estimation methods shows that ensemble methods
+    consistently outperform the rest.
+  areas: General
+  issues:
+  - Baselines
+- key: blum2015ladder
+  title: 'The Ladder: A Reliable Leaderboard for Machine Learning Competitions '
+  year: 2015
+  author:
+  - Avrim Blum
+  - Moritz Hardt
+  summary: The paper introduces a specific attack on competition leaderboards demonstrating
+    that overfitting from test set re-use is easily possible.The paper also describes
+    a mechanism to protect from overfitting.
+  url: http://arxiv.org/abs/1502.04585v1
+  areas: General
+  issues:
+  - Overfitting
+- key: roelofs2019meta
+  title: 'A Meta-Analysis of Overfitting in Machine Learning '
+  summary: The authors survey more than 100 classification competitions on Kaggle
+    and find little to no overfitting from test set re-use.
+  areas: General
+  issues:
+  - Overfitting
+- key: d2020underspecification
+  title: 'Underspecification Presents Challenges for Credibility in Modern Machine
+    Learning '
+  year: 2020
+  author:
+  - Alexander D'Amour
+  - Katherine Heller
+  - Dan Moldovan
+  - Ben Adlam
+  - Babak Alipanahi
+  - Alex Beutel
+  - Christina Chen
+  - Jonathan Deaton
+  - Jacob Eisenstein
+  - Matthew D. Hoffman
+  - Farhad Hormozdiari
+  - Neil Houlsby
+  - Shaobo Hou
+  - Ghassen Jerfel
+  - Alan Karthikesalingam
+  - Mario Lucic
+  - Yian Ma
+  - Cory McLean
+  - Diana Mincu
+  - Akinori Mitani
+  - Andrea Montanari
+  - Zachary Nado
+  - Vivek Natarajan
+  - Christopher Nielson
+  - Thomas F. Osborne
+  - Rajiv Raman
+  - Kim Ramasamy
+  - Rory Sayres
+  - Jessica Schrouff
+  - Martin Seneviratne
+  - Shannon Sequeira
+  - Harini Suresh
+  - Victor Veitch
+  - Max Vladymyrov
+  - Xuezhi Wang
+  - Kellie Webster
+  - Steve Yadlowsky
+  - Taedong Yun
+  - Xiaohua Zhai
+  - D. Sculley
+  summary: ' Machine learning models that are identically trained and developed fail
+    in different ways once deployed - this is partially due to the ``underspecification''''
+    of the learning problem, in which features of the problem in the training domain
+    are unaccounted for with respect to their influence on performance in the deployment
+    domain.'
+  url: http://arxiv.org/abs/2011.03395v2
+  areas: General
+  issues:
+  - Data_external
+- key: wallingford2020wild
+  title: 'In the wild: From ml models to pragmatic ml systems '
+  summary: Implicit assumptions in the experimental setup of few-shot and continual
+    learning tasks obscure a clear understanding of performance measurement. The FLUID
+    framework re-introduces certain experimental design considerations that need to
+    be explicitly designed for real world model deployment.
+  areas: General
+  issues:
+  - Data_external
+  - Baselines
+- key: paullada2020data
+  title: "Data and it\u2019s (dis)contents "
+  year: 2017
+  author:
+  - Johannes Reich
+  summary: ' The culture around dataset development, use, and distribution demonstrates
+    a lack of cautious attention paid to this critical aspect of broader machine learning
+    development.\'
+  url: http://arxiv.org/abs/1801.04992v2
+  areas: General
+  issues:
+  - Data_external
+  - Data_internal
